@@ -6,7 +6,7 @@ const upload = multer({ dest: 'uploads/' })
 const app = express()
 
 app.get('/', (req, res) => {
-  res.sendFile('index.html', {root: 'C:/Users/joeya/freeCodeCamp/file-metadata-microservice'})
+  res.sendFile('index.html', {root: 'C:/Users/joeya/freeCodeCamp/file-metadata-microservice/api'})
 })
 
 app.post('/api/metadata', upload.single('upfile'), (req, res) => {
